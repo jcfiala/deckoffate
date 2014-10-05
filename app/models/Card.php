@@ -21,7 +21,7 @@ class Card extends Eloquent {
         
         public function __toString()
         {
-          return $this->value . ":" . $this->getTitle() . ':' . $this->getSymbol(1) . $this->getSymbol(2) . $this->getSymbol(3);
+          return $this->value() . ":" . $this->getTitle() . ':' . $this->getSymbol(1) . $this->getSymbol(2) . $this->getSymbol(3);
         }
         
         public function getTitle() {

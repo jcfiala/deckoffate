@@ -10,9 +10,9 @@ class Deck {
   public static function load($id = 0) {
     $deck = new Deck;
     $cards = Card::where('deckId', '=', $id)->get();
-    $this->cards = array();
+    $deck->cards = array();
     foreach ($cards as &$card) {
-      $this->cards[] = $card;
+      $deck->cards[] = $card;
     }
     return $deck;
   }
