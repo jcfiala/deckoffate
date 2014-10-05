@@ -13,5 +13,25 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	$card = null;
+	if (Session::has('deck')) {
+		$deck = Session::get('deck');
+		$card = $deck->draw();
+	}
+	return View::make('hello', array('card' => $card));
+});
+
+Route::get('shuffle', function()
+{
+	// Create a deck.
+	if (Session::has('deck'))
+	{
+		$deck = Session::get('deck');
+	}
+	else {
+		$deck = Deck::load();
+	}
+	$deck->shuffle();
+	Session::put('deck', $deck);
+	return Redirect::to('/');
 });
