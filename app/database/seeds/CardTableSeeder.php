@@ -162,6 +162,40 @@ class CardTableSeeder extends Seeder {
         "All Things Balanced", "As Expected", array(0, 0, 0, 0), array(null, 0, null),
       ),
       // +1
+      array(
+        "Perceptive", "Position of Strength", array(0, 1, 1, -1), array(null, 1, null),
+      ),
+      array(
+        "Smart", "Charged Up", array(1, 0, 1, -1), array(null, 1, null),
+      ),
+      array(
+        "Well-Read", "They Were Slow", array(1, 1, 0, -1), array(null, 1, null),
+      ),
+      array(
+        "Trick Up Your Sleeve", "Saw an Opening", array(-1, 0, 1, 1), array(null, -1, null),
+      ),
+      array(
+        "Alliance Bears Fruit", "Solid Footing", array(1, -1, 0, 1), array(null, -1, null),
+      ),
+      array(
+        "Fast on Your Feet", "Went with Your Gut", array(-1, 1, 0, 1), array(null, -1, null),
+      ),
+      array(
+        "Insightful", "Passed the Advantage", array(0, 1, -1, 1), array(null, 1, null),
+      ),
+      array(
+        "Well-Prepared", "Lucky Charm", array(1, 0, -1, 1), array(null, 1, null),
+      ),
+      array(
+        "On Point", "Put Them Off Balance", array(0, -1, 1, 1), array(null, 1, null),
+      ),
+      array(
+        "Didn't See You Coming", "Stumbled Into Success", array(1, 1, -1, 1), array(null, -1, null),
+      ),
+      array(
+        "Small Blessings", "Aggresive Move", array(1, -1, 1, 0), array(null, -1, null),
+      ),
+      
     );
     foreach($card_data as $card) {
       Card::create(array('title' => $card[0], 'title2' => $card[1],
