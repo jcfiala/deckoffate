@@ -195,7 +195,69 @@ class CardTableSeeder extends Seeder {
       array(
         "Small Blessings", "Aggresive Move", array(1, -1, 1, 0), array(null, -1, null),
       ),
-      
+      array(
+        "Experience Pays Dividends", "Fell into Your Lap", array(-1, 1, 1, 0), array(null, -1, null),
+      ),
+      array(
+        "A Shining Moment", "Well Practiced", array(0, 0, 0, 1), array(1, 1, 1),
+      ),
+      array(
+        "Couldn't Say It Better", "Clever, Clever", array(1, 0, 0, 0), array(-1, -1, -1),
+      ),
+      array(
+        "Proud Performance", "Got It the First Time", array(0, 1, 0, 0), array(-1, -1, 1),
+      ),
+      array(
+        "Bold and Brash", "Tilted Your Way", array(0, 0, 1, 0), array(-1, 1, 1),
+      ),
+      // +2
+      array(
+        "On Top of It", "Fortune Smiles", array(1, 1, 1, -1), array(1, 1, 1),
+      ),
+      array(
+        "Sneaky, Sneaky", "Fortunate Reversal", array(-1, 1, 1, 1), array(-1, -1, -1),
+      ),
+      array(
+        "The Big Twist", "A Solid Blow", array(1, -1, 1, 1), array(-1, -1, 1),
+      ),
+      array(
+        "Fell Your Way", "Joke's On Them", array(1, 1, -1, 1), array(-1, 1, 1),
+      ),
+      array(
+        "In the Groove", "Got the High Ground", array(1, 0, 0, 1), array(-1, null, -1),
+      ),
+      array(
+        "Right Up Your Alley", "Swift & Sudden", array(0, 1, 0, 1), array(-1, null, 1),
+      ),
+      array(
+        "In Control", "Seeing All Angles", array(0, 0, 1, 1), array(1, null, 1),
+      ),
+      array(
+        "Excitement Builds", "Just Dumb Luck", array(1, 1, 0, 0), array(-1, null, -1),
+      ),
+      array(
+        "All's Well", "Windfall", array(1, 0, 1, 0), array(-1, null, 1),
+      ),
+      array(
+        "Coming Up Roses", "It's All in the Reflexes", array(0, 1, 1, 0), array(1, null, 1),
+      ),
+      // +3
+      array(
+        "Eureka", "Moment of Truth", array(1, 1, 0, 1), array(-1, -1, 1),
+      ),
+      array(
+        "Got it Surrounded", "Top of the World", array(1, 0, 1, 1), array(-1, 1, 1),
+      ),
+      array(
+        "A Good Day", "Bullseye", array(0, 1, 1, 1), array(1, 1, 1),
+      ),
+      array(
+        "Sublime & Subtle", "All Lined Up", array(1, 1, 1, 0), array(-1, -1, -1),
+      ),
+      // +4!
+      array(
+        "Incredible Luck", "Perfect Form", array(1, 1, 1, 1), array(null, 0, null),
+      ),
     );
     foreach($card_data as $card) {
       Card::create(array('title' => $card[0], 'title2' => $card[1],
